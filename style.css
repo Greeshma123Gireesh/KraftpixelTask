@@ -1,0 +1,97 @@
+.navbar{
+    padding:15px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li{
+    display: inline;
+}
+ .nav-links a{
+    text-decoration: none;
+    color:black
+ }
+ .logo{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ .buttons{
+    display: flex;
+    gap: 20px;
+ }
+.login{
+    text-decoration: none;
+    color:black;
+}
+.signup{
+    text-decoration: none;
+    border-radius: 5px;
+    background-color:blueviolet;
+    color:rgb(238, 229, 229);
+    padding:5px 5px;
+}
+.about{
+    text-align: center;
+}
+.status{
+    background-color: rgb(244, 240, 240);
+    padding: 80px;
+}
+.container{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.marking{
+    color: blueviolet;
+}
+.description h2{
+    margin-bottom: 50px
+}
+.achieve{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.achieve h3{
+    color:blueviolet;
+    font-size: 28px;
+}
+.image img{
+    width: 100%;
+}
+@media (max-width:768px)
+{
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .buttons{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .image img{
+        width: 100%;
+    }
+    .achieve{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
